@@ -83,7 +83,7 @@ public class EntradaTexto
         aDevolver += mensaje + "\n";
 
         // Calculamos el numero de segundos que han pasado desde la fecha de publicacion.
-        long numeroSegundos = momentoPublicacion.until(LocalDateTime.now(), ChronoUnit.SECONDS);
+        long numeroSegundos = 10;
         aDevolver += "Escrito hace ";
 
         // Comprobamos si debemos expresar el tiempo en segundos o minutos.
