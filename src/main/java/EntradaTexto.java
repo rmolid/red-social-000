@@ -66,4 +66,15 @@ public class EntradaTexto extends Entrada
 
         return aDevolver;
     }
+
+    /**
+     * Metodo que muestra por pantalla el autor y el texto del mensaje
+     */
+    public String mostrarAutorYMensaje(){
+        String aDevolver = "Autor: " + super.getUsuario() + "\n" + "Mensaje: " + this.getMensaje() + "\n";
+        System.out.print(aDevolver);
+        return aDevolver;
+
+    }
+
 }
