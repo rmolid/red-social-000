@@ -49,7 +49,7 @@ public class EntradaFoto extends EntradaConComentario
         return titulo;
     }
 
-        /**
+    /**
      * Devuelve una cadena con toda la informacion de la entrada.
      * @return Devuelve una cadena con toda la informacion de la entrada.
      */

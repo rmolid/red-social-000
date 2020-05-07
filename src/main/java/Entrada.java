@@ -53,7 +53,7 @@ public class Entrada {
 
 
     public String getTiempoDesdeLaPublicacion(){
-        return "Escrito hace 10 segundos";
+        return "hace 10 segundos";
     }
 
     public String toString(){
