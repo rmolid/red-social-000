@@ -10,7 +10,7 @@
  *  @author DAM
  *  @version 1.0
  */
-public class EntradaFoto extends Entrada
+public class EntradaFoto extends EntradaConComentario
 {
     // URL de la imagen.
     private String urlImagen;
@@ -61,17 +61,8 @@ public class EntradaFoto extends Entrada
         aDevolver += "Url: " + urlImagen + "\n";
         aDevolver += "Titulo: " + titulo + "\n";
         aDevolver += getTiempoDesdeLaPublicacion() + "\n";
-        
-        // Comprobamos si hay comentarios. Si hay los mostramos, si no, mostramos un mensaje indicandolo.
-        if (getComentarios().isEmpty()) {
-            aDevolver += "No hay comentarios\n";
-        }
-        else {
-            aDevolver += "Comentarios: \n";
-            for (String comentarioActual : getComentarios()) {
-                aDevolver += comentarioActual + "\n";
-            }
-        }
+        aDevolver += getComentariosTexto();
+
 
         return aDevolver;
     }

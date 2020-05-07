@@ -1,5 +1,5 @@
 import java.time.LocalDateTime;
-import java.util.ArrayList;
+
 
 public class Entrada {
 
@@ -9,8 +9,7 @@ public class Entrada {
     private LocalDateTime momentoPublicacion;
     // Numero de 'me gusta' de la entrada.
     private int cantidadMeGusta;
-    // Comentarios de la entrada.
-    private ArrayList<String> comentarios;
+
 
     /**
      * Constructor de la clase entrada.
@@ -18,21 +17,13 @@ public class Entrada {
      */
     public Entrada (String autor){
         this.usuario = autor;
-        this.comentarios = new ArrayList<>();
+        
     }
     /**
      * Anade un 'me gusta' a la entrada.
      */
     public void meGusta() {
         cantidadMeGusta += 1;
-    }
-
-    /**
-     * Anade un comentario a a la entrada.
-     * @param textoComentario El comentario a anadir.
-     */
-    public void addComentario(String textoComentario) {
-        comentarios.add(textoComentario);
     }
 
     /**
@@ -59,13 +50,7 @@ public class Entrada {
         return cantidadMeGusta;
     }
 
-    /**
-     * Devuelve la lista de comentarios de una publicacion.
-     * @return comentarios de una publicacion.
-     */
-    public ArrayList<String> getComentarios() {
-        return comentarios;
-    }
+
 
     public String getTiempoDesdeLaPublicacion(){
         return "Escrito hace 10 segundos";
