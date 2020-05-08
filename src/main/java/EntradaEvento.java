@@ -27,7 +27,13 @@ public class EntradaEvento extends Entrada{
     @Override
     public String toString() {
         String aDevolver = "";
-        aDevolver +=   getUsuario() + " " + getEvento() + " " + "(" + getTiempoDesdeLaPublicacion() + ")";
+        aDevolver += "Usuario: " + getUsuario() + "\n";
+        aDevolver += "Likes: " + getCantidadMeGusta() + "\n";
+        aDevolver += getEvento() + "\n";      
+        aDevolver += "Momento de publicacion:" + getTiempoDesdeLaPublicacion() + "\n";
+      
+
+
         return aDevolver;
     }
 }
