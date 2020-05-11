@@ -27,18 +27,18 @@ public class MuroTest {
         EntradaEvento entrada07 = new EntradaEvento("Maria", "Ha abandonado el grupo DAM");
 
         //Añadir entradas al muro
-        muro.addEntradaTexto(entrada01);
-        muro.addEntradaFoto(entrada02);
-        muro.addEntradaTexto(entrada03);
-        muro.addEntradaFoto(entrada04);
-        muro.addEntradaEvento(entrada06);
-        muro.addEntradaEvento(entrada07);
+        muro.addEntrada(entrada01);
+        muro.addEntrada(entrada02);
+        muro.addEntrada(entrada03);
+        muro.addEntrada(entrada04);
+        muro.addEntrada(entrada06);
+        muro.addEntrada(entrada07);
         
         //Testear muro
         System.out.println(muro);
         assertEquals("Usuario: Nacho\nLikes: 0\nRecien llegado de mis vacaciones en Hawai!\nhace 10 segundos\nNo hay comentarios\n\n\n" +
-        "Usuario: Begona\nLikes: 0\nEsta lloviendo ahi fuera...\nhace 10 segundos\nNo hay comentarios\n\n\n" + 
         "Usuario: Luis\nLikes: 0\nUrl: https://bit.ly/2W1dO09\nTitulo: Gracias\nhace 10 segundos\nNo hay comentarios\n\n\n" + 
+        "Usuario: Begona\nLikes: 0\nEsta lloviendo ahi fuera...\nhace 10 segundos\nNo hay comentarios\n\n\n"  +
         "Usuario: Cristina\nLikes: 0\nUrl: https://bit.ly/3cY9vtD\nTitulo: Una foto de mi nevera\nhace 10 segundos\nNo hay comentarios\n\n\n" +
         "Usuario: Luis\nLikes: 0\nSe ha unido al grupo DAM\nMomento de publicacion:hace 10 segundos\n\n\n" +
         "Usuario: Maria\nLikes: 0\nHa abandonado el grupo DAM\nMomento de publicacion:hace 10 segundos\n\n\n",
