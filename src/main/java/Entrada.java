@@ -56,8 +56,14 @@ public class Entrada {
         return "hace 10 segundos";
     }
 
+        
     public String toString(){
-        return "";
+        String aDevolver = "";
+        aDevolver += "Usuario: " + getUsuario() + "\n";
+        aDevolver += "Momento de publicacion: " + getTiempoDesdeLaPublicacion() + "\n";
+        aDevolver += "Likes: " + getCantidadMeGusta() + "\n";
+        return aDevolver;
     }
+    
     
 }

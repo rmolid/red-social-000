@@ -21,19 +21,13 @@ public class EntradaEvento extends Entrada{
     }
 
     /**
-     * Devuelve una cadena con el usuario, evento y tiempo de publicacion de la entrada.
-     * @return Devuelve una cadena con el usuario, evento y tiempo de publicacion.
+     * Devuelve una cadena con la informacion relativa a entrada evento.
+     * @return Devuelve una cadena con la informacion relativa a entrada evento.
      */
     @Override
     public String toString() {
-        String aDevolver = "";
-        aDevolver += "Usuario: " + getUsuario() + "\n";
-        aDevolver += "Likes: " + getCantidadMeGusta() + "\n";
+        String aDevolver = super.toString();    
         aDevolver += getEvento() + "\n";      
-        aDevolver += "Momento de publicacion:" + getTiempoDesdeLaPublicacion() + "\n";
-      
-
-
-        return aDevolver;
+        return aDevolver.substring(0,aDevolver.length()-1);
     }
 }

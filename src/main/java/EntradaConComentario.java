@@ -39,13 +39,27 @@ public class EntradaConComentario extends Entrada {
             textoComentario += "No hay comentarios\n";
         }
         else {
-            textoComentario += "Comentarios: \n";
+            textoComentario += "";
             for(String comentarioActual : comentarios){
                 textoComentario += comentarioActual + "\n";
             }
         }
         return textoComentario;
     }
+
+    /**
+     * Metodo toString que devuelve la informacion que pertenece a las entradas 
+     * con comentarios
+     * @return String con la informacion que pertenece a Entrada con comentario
+     */
+    @Override
+    public String toString(){
+        String aDevolver =super.toString();
+        aDevolver += "Comentarios: " + getComentariosTexto() + "\n";
+        return aDevolver;
+    }
+
+
     
 
 }

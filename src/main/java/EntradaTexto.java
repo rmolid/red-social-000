@@ -39,23 +39,15 @@ public class EntradaTexto extends EntradaConComentario
 
 
     /**
-     * Devuelve una cadena con toda la informacion de la entrada.
-     * @return Devuelve una cadena con toda la informacion de la entrada.
+     * Devuelve una cadena con toda la informacion de la entrada de texto
+     * @return Devuelve una cadena con toda la informacion de la entrada de texto.
      */
     @Override
     public String toString() {
-        String aDevolver = "";
-        aDevolver += "Usuario: " + getUsuario() + "\n";
-        aDevolver += "Likes: " + getCantidadMeGusta() + "\n";
+
+        String aDevolver = super.toString();
         aDevolver += mensaje + "\n";
-
-        // Calculamos el numero de segundos que han pasado desde la fecha de publicacion.
-       
-        aDevolver +=getTiempoDesdeLaPublicacion() + "\n";
-
-        aDevolver += getComentariosTexto();
-
-        return aDevolver;
+        return aDevolver.substring(0,aDevolver.length());
     }
 
     /**

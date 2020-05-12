@@ -28,6 +28,7 @@ public class MuroTest {
 
         //Añadir entradas al muro
         muro.addEntrada(entrada01);
+        entrada01.addComentario("Que bonito!");
         muro.addEntrada(entrada02);
         muro.addEntrada(entrada03);
         muro.addEntrada(entrada04);
@@ -36,12 +37,13 @@ public class MuroTest {
         
         //Testear muro
         System.out.println(muro);
-        assertEquals("Usuario: Nacho\nLikes: 0\nRecien llegado de mis vacaciones en Hawai!\nhace 10 segundos\nNo hay comentarios\n\n\n" +
-        "Usuario: Luis\nLikes: 0\nUrl: https://bit.ly/2W1dO09\nTitulo: Gracias\nhace 10 segundos\nNo hay comentarios\n\n\n" + 
-        "Usuario: Begona\nLikes: 0\nEsta lloviendo ahi fuera...\nhace 10 segundos\nNo hay comentarios\n\n\n"  +
-        "Usuario: Cristina\nLikes: 0\nUrl: https://bit.ly/3cY9vtD\nTitulo: Una foto de mi nevera\nhace 10 segundos\nNo hay comentarios\n\n\n" +
-        "Usuario: Luis\nLikes: 0\nSe ha unido al grupo DAM\nMomento de publicacion:hace 10 segundos\n\n\n" +
-        "Usuario: Maria\nLikes: 0\nHa abandonado el grupo DAM\nMomento de publicacion:hace 10 segundos\n\n\n",
+        assertEquals("Usuario: Nacho\nMomento de publicacion: hace 10 segundos\nLikes: 0\nComentarios: Que bonito!\n\nRecien llegado de mis vacaciones en Hawai!\n\n\n" +
+
+        "Usuario: Luis\nMomento de publicacion: hace 10 segundos\nLikes: 0\nComentarios: No hay comentarios\n\nUrl: https://bit.ly/2W1dO09\nTitulo: Gracias\n\n\n" + 
+        "Usuario: Begona\nMomento de publicacion: hace 10 segundos\nLikes: 0\nComentarios: No hay comentarios\n\nEsta lloviendo ahi fuera...\n\n\n"+
+        "Usuario: Cristina\nMomento de publicacion: hace 10 segundos\nLikes: 0\nComentarios: No hay comentarios\n\nUrl: https://bit.ly/3cY9vtD\nTitulo: Una foto de mi nevera\n\n\n" +
+        "Usuario: Luis\nMomento de publicacion: hace 10 segundos\nLikes: 0\nSe ha unido al grupo DAM\n\n" +
+        "Usuario: Maria\nMomento de publicacion: hace 10 segundos\nLikes: 0\nHa abandonado el grupo DAM\n\n",
         muro.toString());
 
 
