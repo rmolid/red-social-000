@@ -53,7 +53,10 @@ public class MuroTest {
         assertEquals("Autor: Begona\nMensaje: Esta lloviendo ahi fuera...\n", entrada03.mostrarAutorYMensaje());
         assertEquals("Autor: Luis\nMensaje: Hola Mundo!\n", entrada05.mostrarAutorYMensaje());
 
-       
-    }
+        //Testear el metodo mostrarDetallesEntrada
+        System.out.println("===========================================================");
+        muro.mostrarDetallesTodasLasEntradas();
+        
 
-}
+    }
+    }

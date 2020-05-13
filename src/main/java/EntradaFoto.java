@@ -62,6 +62,17 @@ public class EntradaFoto extends EntradaConComentario
         return aDevolver.substring(0,aDevolver.length());
     }
 
+    
+    /**
+     * Metodo que muestra por pantalla los detalles de las entradas de foto
+     */
+    public void mostrarDetallesPorPantalla(){
+        System.out.println("Nueva foto de: " + getUsuario());
+        System.out.println("Titulo: "+  this.titulo);
+        System.out.println("Url: " + this.urlImagen);
+        
+    }
+
 
 
 

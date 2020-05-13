@@ -58,6 +58,13 @@ public class EntradaTexto extends EntradaConComentario
         System.out.print(aDevolver);
         return aDevolver;
 
+    }   
+    /**
+     * Metodo que muestra por pantalla los detalles de las entradas de texto
+     */
+    public void mostrarDetallesPorPantalla(){
+        System.out.println("Nuevo texto de: " + getUsuario());
+        System.out.println("Mensaje: " + this.mensaje);
     }
 
 }
