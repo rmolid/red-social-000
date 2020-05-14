@@ -50,19 +50,9 @@ public class Muro
      */
     public void mostrarDetallesTodasLasEntradas(){
         for(Entrada entrada : entradas){
-            if (entrada instanceof EntradaFoto){
-                EntradaFoto ef = (EntradaFoto) entrada;
-                ef.mostrarDetallesPorPantalla();
-            }
-            else if (entrada instanceof EntradaTexto){
-                EntradaTexto et = (EntradaTexto) entrada;
-                et.mostrarDetallesPorPantalla();
-            }else{
-                EntradaEvento ev = (EntradaEvento) entrada;
-                ev.mostrarDetallesPorPantalla();
-            }
-            }
+            entrada.mostrarDetallesPorPantalla();
         }
+    }
 
     }
 
