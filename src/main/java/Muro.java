@@ -54,6 +54,26 @@ public class Muro
         }
     }
 
+    /**
+     * Devuelve un array con las url de las EntradaFoto
+     */
+    public String[] getUrlsFotos() {
+        int i = entradas.size();
+        String[] urls = new String[i];
+        int contador = 0;
+        for (Entrada entrada : entradas){
+            //comprobar si es una entrada de tipo foto
+            if(entrada instanceof EntradaFoto){
+                contador++;
+                EntradaFoto foto = (EntradaFoto)entrada;
+                urls[contador] = foto.getUrlImagen() + "\n";
+                System.out.println(urls[contador]);
+           }
+        }
+        return urls;
+        
     }
+
+}
 
 

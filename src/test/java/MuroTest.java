@@ -57,6 +57,8 @@ public class MuroTest {
         System.out.println("===========================================================");
         muro.mostrarDetallesTodasLasEntradas();
         
-
+        //Testear el metodo getUrlsFotos
+        System.out.println("******************************************");
+        muro.getUrlsFotos();
     }
     }
